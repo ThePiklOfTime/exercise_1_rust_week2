@@ -27,7 +27,7 @@ fn main() {
             "1" => uusi_muuttuja = create_default(muuttuja),
             "2" => remove_latest_word(&mut uusi_muuttuja),
             "3" => {
-                println!("The new word:");
+                println!("The new word: ");
                 let mut new_word = String::new();
                 stdin().read_line(&mut new_word).expect("Failed to read line");
                 let new_word = new_word.trim();
