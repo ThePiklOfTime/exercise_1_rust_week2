@@ -25,7 +25,7 @@ fn main() {
         let input = input.trim();
 
         match input {
-            "1" => uusi_muuttuja = create_default(muuttuja),
+            "1" => uusi_muuttuja = create_default(),
             "2" => remove_latest_word(&mut uusi_muuttuja),
             "3" => {
                 println!("The new word: ");
