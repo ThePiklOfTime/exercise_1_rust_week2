@@ -1,5 +1,6 @@
 use std::io::stdin;
-fn create_default(muuttuja: &str) -> String {
+fn create_default() -> String {
+    let muuttuja = "I want to be changed.";
     let uusi_muuttuja = muuttuja.to_string();
     uusi_muuttuja
 }
@@ -13,8 +14,8 @@ fn remove_latest_word(uusi_muuttuja: &mut String){
 }
 
 fn main() {
-    let muuttuja = "I want to be changed.";
-    let mut uusi_muuttuja = create_default(muuttuja);
+    
+    let mut uusi_muuttuja = create_default();
 
 
     loop {
